@@ -213,7 +213,7 @@ let books = [
   
   console.log("Names classics, dystopian, and mystery  books:\n");
   commonBooks.forEach((book) => {
-    console.log(` Genre : ${book.genre} \t Name:{book.name}`);
+    console.log(`Genre : ${book.genre} \t Name: ${book.title}`);
   });
   
   //question 5
@@ -251,12 +251,13 @@ let books = [
   mysterBooks.sort((a, b) => b.price - a.price);
   
   console.log("Ans: In Overall books highest price is $" + books[0].price);
+
+if (mysterBooks.length > 0) {
   console.log(" In Mystery books highest price is $" + mysterBooks[0].price);
-  { 
-    else {
-      console.log("There are no Mystery books in the collection")
-    }
-  };
+} 
+  console.log("There are no Mystery books in the collection");
+
+
   
   //question 8
   console.log(
